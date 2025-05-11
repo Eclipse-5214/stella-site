@@ -1,0 +1,94 @@
+{
+    "blc-route-system": {
+        "title": "BLC Route System",
+        "description": "Similar to BLC route system\n\n• Familiar interface for BLC users\n• Compatible with existing routes\n• Easy transition from BLC\n• Maintains route quality standards"
+    },
+    "pre-made-routes": {
+        "title": "Pre-made Routes",
+        "description": "70+ pre-made routes included\n\n• Routes for all dungeon floors\n• Optimized for speed and efficiency\n• Multiple route variations\n• Regular route updates"
+    },
+    "custom-routes": {
+        "title": "Custom Routes",
+        "description": "Record and save your own custom routes\n\n• Route recording functionality\n• Save and load custom routes\n• Share routes with party members\n• Edit existing routes"
+    },
+    "secret-tracking": {
+        "title": "Secret Tracking",
+        "description": "Track secret locations\n\n• Real-time secret detection\n• Room-specific secret tracking\n• Secret count per room\n• Party-wide secret coordination"
+    },
+    "coordinate-system": {
+        "title": "Coordinate System",
+        "description": "Coordinate conversion\n\n• Automatic coordinate conversion\n• Easy-to-follow waypoints\n• Custom waypoint colors\n• Distance indicators"
+    },
+    "terminal-numbers": {
+        "title": "Terminal Numbers",
+        "description": "Terminal Numbers display\n\n• Clear number visualization\n• Color-coded terminals\n• Easy-to-read format\n• Customizable display"
+    },
+    "terminal-tracker": {
+        "title": "Terminal Tracker",
+        "description": "Terminal Tracker\n\n• Real-time terminal status\n• Completion tracking\n• Party-wide terminal info\n• Terminal order suggestions"
+    },
+    "room-names": {
+        "title": "Room Names",
+        "description": "Room name GUI\n\n• Clear room identification\n• Room type indicators\n• Custom room names\n• Party-wide room info"
+    },
+    "dungeon-layout": {
+        "title": "Dungeon Layout",
+        "description": "Real-time dungeon layout display\n\n• Live room mapping\n• Room connections\n• Secret locations\n• Player positions"
+    },
+    "boss-room": {
+        "title": "Boss Room",
+        "description": "Detailed boss room mapping\n\n• Boss room indicators\n• Boss mechanics display\n• Phase tracking\n• Party positioning"
+    },
+    "score-tracking": {
+        "title": "Score Tracking",
+        "description": "Current score tracking\n\n• Real-time score updates\n• Score breakdown\n• Milestone tracking\n• Party score comparison"
+    },
+    "crypt-count": {
+        "title": "Crypt Count",
+        "description": "Crypt count display\n\n• Live crypt tracking\n• Crypt locations\n• Party crypt distribution\n• Crypt completion status"
+    },
+    "death-counter": {
+        "title": "Death Counter",
+        "description": "Deaths display\n\n• Individual death tracking\n• Party death summary\n• Death location markers\n• Death cause analysis"
+    },
+    "mimic-status": {
+        "title": "Mimic Status",
+        "description": "Mimic Status\n\n• Mimic detection\n• Mimic location\n• Mimic timer\n• Party alerts"
+    },
+    "room-clears": {
+        "title": "Room Clears",
+        "description": "Per-player room clear tracking\n\n• Individual clear times\n• Room efficiency metrics\n• Clear order tracking\n• Party performance comparison"
+    },
+    "secret-counts": {
+        "title": "Secret Counts",
+        "description": "Secret count per player\n\n• Individual secret finds\n• Secret efficiency\n• Secret route analysis\n• Party secret distribution"
+    },
+    "run-breakdown": {
+        "title": "Run Breakdown",
+        "description": "Detailed run breakdown\n\n• Complete run statistics\n• Performance metrics\n• Time analysis\n• Improvement suggestions"
+    },
+    "clear-times": {
+        "title": "Clear Times",
+        "description": "Room clear time tracking\n\n• Per-room timing\n• Historical data\n• Speed comparisons\n• Efficiency analysis"
+    },
+    "party-metrics": {
+        "title": "Party Metrics",
+        "description": "Party performance metrics\n\n• Team coordination scores\n• Role effectiveness\n• Party synergy analysis\n• Improvement tracking"
+    },
+    "block-highlighting": {
+        "title": "Block Highlighting",
+        "description": "Custom block highlighting\n\n• Customizable colors\n• Multiple highlight types\n• Priority system\n• Toggle options"
+    },
+    "trash-highlighting": {
+        "title": "Trash Highlighting",
+        "description": "Dungeon trash highlighting\n\n• Trash block detection\n• Custom trash markers\n• Clear visibility\n• Performance optimized"
+    },
+    "chroma-effects": {
+        "title": "Chroma Effects",
+        "description": "Cool Chroma effects\n\n• Custom color schemes\n• Dynamic effects\n• Performance options\n• Visual customization"
+    },
+    "shader-support": {
+        "title": "Shader Support",
+        "description": "Custom shader support\n\n• Multiple shader options\n• Performance settings\n• Visual customization\n• Easy toggling"
+    }
+}

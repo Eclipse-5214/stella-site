@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tags for character encoding and responsive viewport -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stella</title>
+        <!-- Font Awesome for icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+        <!-- Main stylesheet for the homepage -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Header section with logo, title, and description -->
+        <div class="header-glass">
+            <img src="/assets/logo.png" alt="Mod Logo" class="mod-logo" />
+            <h1>Stella</h1>
+            <p>A Dungeons focused Chat Triggers QOL mod</p>
+        </div>
+
+        <!-- Navigation bar with links to sections and external resources -->
+        <nav>
+            <a href="#features"><i class="fas fa-star"></i>Features</a>
+            <a href="#screenshots"><i class="fas fa-image"></i>Screenshots</a>
+            <a href="#download"><i class="fas fa-download"></i>Download</a>
+            <a href="Docs/"><i class="fas fa-book"></i>Docs</a>
+            <a href="https://discord.gg/yourserver" target="_blank" title="Join our Discord"><i class="fab fa-discord"></i>Discord</a>
+            <a href="https://github.com/yourrepo" target="_blank" title="View on GitHub"><i class="fab fa-github"></i>GitHub</a>
+        </nav>
+
+        <!-- Hero section with mod introduction -->
+        <section class="hero glass-panel" style="text-align: center;">
+            <h2>Discover Stella</h2>
+            <p>A powerful Skyblock Quality-of-Life mod for ChatTriggers, featuring advanced dungeon routing, secret waypoints, and helpful utilities to enhance your Hypixel Skyblock experience!</p>
+        </section>
+
+        <!-- Features section listing main mod features -->
+        <section class="features glass-panel" id="features">
+            <h2 style="background: linear-gradient(45deg, var(--light-purple), var(--primary-purple)); -webkit-background-clip: text; background-clip: text; color: transparent; display: inline-block">
+                <i class="fas fa-star" style="color: var(--light-purple); margin-right: 10px"></i>Features
+            </h2>
+            <div class="features-box">
+                <!-- Dungeons features group -->
+                <div class="feature-section">
+                    <h3><span>💀</span> Dungeons</h3>
+                    <ul>
+                        <li id="dungeon-routes"><a href="Docs/index.html#dungeon-routes">Dungeon Routes</a></li>
+                        <li id="secret-waypoints"><a href="Docs/index.html#secret-waypoints">Secret Waypoints</a></li>
+                        <li id="terminal-features"><a href="Docs/index.html#terminal-features">Terminal Features</a></li>
+                        <li id="misc-features"><a href="Docs/index.html#misc-features">Misc</a></li>
+                    </ul>
+                </div>
+
+                <!-- StellaNav features group -->
+                <div class="feature-section">
+                    <h3><span>🗺️</span> StellaNav</h3>
+                    <ul>
+                        <li id="interactive-map"><a href="Docs/index.html#interactive-map">Interactive Dungeon Map</a></li>
+                        <li id="dungeon-info"><a href="Docs/index.html#dungeon-info">Dungeon Information</a></li>
+                        <li id="run-stats"><a href="Docs/index.html#run-stats">Run Statistics</a></li>
+                    </ul>
+                </div>
+
+                <!-- General features group -->
+                <div class="feature-section">
+                    <h3><span>✨</span> General Features</h3>
+                    <ul>
+                        <li id="block-overlay"><a href="Docs/index.html#block-overlay">Block Overlay</a></li>
+                        <li id="slot-binding"><a href="Docs/index.html#slot-binding">Slot Binding</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Note about module separation -->
+            <div class="feature-note">
+                <p>📢 <strong>Note:</strong> Both StellaNav and Secret Routes will be available as standalone modules, allowing you to use them independently of the main Stella mod.</p>
+            </div>
+        </section>
+
+        <!-- Screenshots section with example images -->
+        <section class="screenshots glass-panel" id="screenshots">
+            <h2 style="background: linear-gradient(45deg, var(--light-purple), var(--primary-purple)); -webkit-background-clip: text; background-clip: text; color: transparent; display: inline-block">
+                <i class="fas fa-image" style="color: var(--light-purple); margin-right: 10px"></i>Screenshots
+            </h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center">
+                <img src="screenshot1.jpg" alt="Screenshot 1" />
+                <img src="screenshot2.jpg" alt="Screenshot 2" />
+            </div>
+        </section>
+
+        <!-- Download section with version and download link -->
+        <section class="download glass-panel" id="download">
+            <h2 style="background: linear-gradient(45deg, var(--light-purple), var(--primary-purple)); -webkit-background-clip: text; background-clip: text; color: transparent; display: inline-block">
+                <i class="fas fa-download" style="color: var(--light-purple); margin-right: 10px"></i>Download the Mod
+            </h2>
+            <p>Current version: <strong>v1.2.3</strong> | Compatible with Minecraft 1.20+</p>
+            <a href="Docs/#install"><i class="fas fa-download"></i><span>Download Now</span></a>
+        </section>
+
+        <!-- Footer with copyright and external links -->
+        <footer>
+            <p>&copy; 2024 Stella Dev Team. Not affiliated with Mojang.</p>
+            <p>
+                <a href="https://discord.gg/yourserver" target="_blank">
+                    <i class="fab fa-discord fa-lg"></i>
+                </a>
+                <a href="https://github.com/yourrepo" target="_blank">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+            </p>
+        </footer>
+    </body>
+</html>

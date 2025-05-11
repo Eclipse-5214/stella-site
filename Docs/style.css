@@ -1,0 +1,925 @@
+/* Root variables for consistent theming */
+:root {
+    --primary-purple: #9c27b0;
+    --light-purple: #ba68c8;
+    --dark-purple: #7b1fa2;
+    --hover-purple: rgba(156, 39, 176, 0.5);
+}
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Base body styles with background image */
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/background.png") center/cover no-repeat fixed;
+    background-attachment: fixed;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+/* Glass panel container for main content sections */
+.glass-panel {
+    background: rgba(30, 30, 30, 0.7);
+    border-radius: 16px;
+    padding: 20px 20px 40px 20px;
+    margin: 20px auto;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    max-width: 1000px;
+    border: 1px solid rgba(156, 39, 176, 0.1);
+    box-shadow: 0 4px 30px rgba(156, 39, 176, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 40px;
+}
+
+/* Header glass panel with title and description */
+.header-glass {
+    background: rgba(30, 30, 30, 0.75);
+    border-radius: 24px;
+    padding: 20px 20px 40px 20px;
+    margin: 30px auto 10px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
+    max-width: 1000px;
+    border: 1px solid rgba(156, 39, 176, 0.2);
+    box-shadow: 0 6px 30px rgba(156, 39, 176, 0.15);
+}
+
+/* Header title styles */
+.header-glass h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: var(--primary-purple);
+}
+
+/* Header description styles */
+.header-glass p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Navigation bar container */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(30, 30, 30, 0.75);
+    flex-wrap: wrap;
+    border-radius: 16px;
+    max-width: 1000px;
+    margin: 10px auto 30px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+    padding: 8px;
+    gap: 8px;
+    border: 1px solid rgba(156, 39, 176, 0.1);
+}
+
+/* Navigation link styles */
+nav a {
+    color: var(--light-purple);
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    background: rgba(156, 39, 176, 0.05);
+    border: 1px solid rgba(156, 39, 176, 0.1);
+}
+
+/* Navigation link hover effects */
+nav a:hover {
+    background: rgba(156, 39, 176, 0.15);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(156, 39, 176, 0.2);
+    border-color: rgba(156, 39, 176, 0.3);
+}
+
+/* Navigation link active state */
+nav a:active {
+    transform: translateY(0);
+    background: rgba(156, 39, 176, 0.2);
+}
+
+/* Navigation icon styles */
+nav a i {
+    font-size: 1.1rem;
+    color: var(--primary-purple);
+    transition: all 0.3s ease;
+}
+
+/* Navigation icon hover effects */
+nav a:hover i {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Documentation section container */
+.doc-section {
+    max-width: 1000px;
+    margin: auto;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Documentation section headings */
+.doc-section h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: var(--primary-purple);
+}
+
+/* Documentation section subheadings */
+.doc-section h3 {
+    color: var(--light-purple);
+    margin-top: 1.5em;
+}
+
+/* Documentation section paragraphs */
+.doc-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Documentation code blocks */
+.doc-section code {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: var(--light-purple);
+}
+
+/* Documentation lists */
+.doc-section ul,
+.doc-section ol {
+    padding-left: 20px;
+}
+
+/* Documentation list items */
+.doc-section li {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Documentation links */
+.doc-section a {
+    color: var(--light-purple);
+    text-decoration: none;
+}
+
+/* Documentation link hover effects */
+.doc-section a:hover {
+    color: var(--primary-purple);
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 30px 10px;
+    background-color: rgba(13, 13, 13, 0.85);
+    color: #bbb;
+    border-radius: 24px 24px 0 0;
+    margin: 40px auto 0;
+    max-width: 1000px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(156, 39, 176, 0.2);
+    box-shadow: 0 6px 30px rgba(156, 39, 176, 0.15);
+}
+
+/* Footer links */
+footer a {
+    color: var(--light-purple);
+    margin: 0 10px;
+}
+
+/* Footer link hover effects */
+footer a:hover {
+    color: var(--primary-purple);
+}
+
+/* Toggle container for alternative installation */
+.toggle-container {
+    position: relative;
+}
+
+/* Toggle button styles */
+.toggle-button {
+    background: rgba(156, 39, 176, 0.2);
+    color: var(--primary-purple);
+    border: 1px solid rgba(156, 39, 176, 0.3);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    position: relative;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Toggle button hover effects */
+.toggle-button:hover {
+    background: rgba(156, 39, 176, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(156, 39, 176, 0.2);
+    border: 1px solid rgba(156, 39, 176, 0.4);
+    color: var(--light-purple);
+}
+
+/* Toggle button active state */
+.toggle-button:active {
+    transform: translateY(0);
+}
+
+/* Remove default button styles */
+.toggle-button::before {
+    display: none;
+}
+
+.toggle-button:hover::before {
+    display: none;
+}
+
+/* Toggle button text container */
+.toggle-button span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Alternative installation popup */
+.alt-install {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    width: 90%;
+    max-width: 600px;
+    background: rgba(30, 30, 30, 0.95);
+    border-radius: 8px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+}
+
+/* Active state for alternative installation popup */
+.alt-install.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Alternative installation content animations */
+.alt-install.active .alt-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.alt-install.active h4 {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.alt-install.active ul {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.alt-install.active li {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Close button for popups */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(156, 39, 176, 0.1);
+    border: 1px solid rgba(156, 39, 176, 0.2);
+    color: var(--light-purple);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Close button icon */
+.close-button i {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/* Close button hover effects */
+.close-button:hover {
+    background: rgba(156, 39, 176, 0.2);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Hover effects for alternative installation */
+.toggle-button:hover + .alt-install {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.toggle-button:hover + .alt-install .alt-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toggle-button:hover + .alt-install h4 {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.toggle-button:hover + .alt-install ul {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.toggle-button:hover + .alt-install li {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Alternative installation content */
+.alt-content {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+}
+
+/* Alternative installation heading */
+.alt-install h4 {
+    margin-top: 0;
+    color: var(--light-purple);
+    transform: translateX(-10px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-delay: 0.2s;
+}
+
+/* Alternative installation list */
+.alt-install ul {
+    padding-left: 20px;
+    transform: translateX(-10px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-delay: 0.3s;
+}
+
+/* Alternative installation list items */
+.alt-install li {
+    margin: 8px 0;
+    transform: translateX(-10px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+/* Alternative installation code blocks */
+.alt-install code {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: var(--light-purple);
+}
+
+/* Command section hover effects */
+.toggle-container:hover ~ #commands {
+    transform: translateY(300px);
+    opacity: 0.7;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Installation section positioning */
+#install {
+    position: relative;
+}
+
+/* Commands section positioning */
+#commands {
+    position: relative;
+}
+
+/* Glass panel transitions */
+.glass-panel {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Command section hover opacity */
+.toggle-container:hover ~ #commands {
+    opacity: 0.7;
+}
+
+/* Feature note container */
+.feature-note {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(156, 39, 176, 0.1);
+    border: 1px solid rgba(156, 39, 176, 0.2);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Feature note heading */
+.feature-note h4 {
+    margin-top: 0;
+    color: var(--primary-purple);
+}
+
+/* Feature note paragraphs */
+.feature-note p {
+    margin: 10px 0;
+    color: var(--light-purple);
+}
+
+/* Feature note lists */
+.feature-note ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+/* Feature note list items */
+.feature-note li {
+    color: var(--light-purple);
+    margin: 5px 0;
+}
+
+/* Feature section container */
+.feature-section {
+    position: relative;
+    background: rgba(156, 39, 176, 0.05);
+    border: 1px solid rgba(156, 39, 176, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 2px 16px rgba(156, 39, 176, 0.05);
+    transition: all 0.3s ease;
+    overflow: visible;
+}
+
+/* Active state for feature section with popup */
+.feature-section.popup-active {
+    background: rgba(156, 39, 176, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 4px 20px rgba(156, 39, 176, 0.15);
+}
+
+/* Blur effect for active feature section content */
+.feature-section.popup-active > * {
+    filter: blur(2px);
+    transition: filter 0.3s ease;
+}
+
+/* Feature section hover effects */
+.feature-section:hover {
+    background: rgba(156, 39, 176, 0.08);
+    border-color: rgba(156, 39, 176, 0.25);
+    box-shadow: 0 4px 20px rgba(156, 39, 176, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Remove margin from last feature section */
+.feature-section:last-child {
+    margin-bottom: 0;
+}
+
+/* Feature section heading */
+.feature-section h3 {
+    margin-top: 0;
+    color: var(--primary-purple);
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Feature section emoji */
+.feature-section h3 span {
+    filter: hue-rotate(270deg) saturate(2);
+}
+
+/* Feature section lists */
+.feature-section ul {
+    margin-bottom: 16px;
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Feature section list items */
+.feature-section li {
+    margin: 12px 0;
+    padding-left: 25px;
+    position: relative;
+    color: var(--light-purple);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Feature section list item hover effects */
+.feature-section li:hover {
+    color: var(--primary-purple);
+    transform: translateX(5px);
+}
+
+/* Feature section nested lists */
+.feature-section ul ul {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 20px;
+}
+
+/* Feature section nested list items */
+.feature-section ul ul li {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Feature section nested list item hover effects */
+.feature-section ul ul li:hover {
+    color: var(--primary-purple) !important;
+    transform: translateX(5px);
+}
+
+/* Feature section nested list item bullets */
+.feature-section ul ul li::before {
+    content: "•";
+    color: var(--light-purple);
+}
+
+/* Features box container */
+.features-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Features box heading */
+.features-box h3 {
+    margin-top: 0;
+    color: var(--primary-purple);
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Features box emoji */
+.features-box h3 span {
+    filter: hue-rotate(270deg) saturate(2);
+}
+
+/* Features box lists */
+.features-box ul {
+    margin-bottom: 16px;
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Features box list items */
+.features-box li {
+    margin: 12px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+/* Features box list item bullets */
+.features-box li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Features box nested lists */
+.features-box ul ul {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 20px;
+}
+
+/* Features box nested list items */
+.features-box ul ul li {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Features box nested list item hover effects */
+.features-box ul ul li:hover {
+    color: var(--primary-purple) !important;
+    transform: translateX(5px);
+}
+
+/* Features box top-level list items */
+.features-box ul > li {
+    color: var(--light-purple);
+    font-weight: 500;
+    margin: 16px 0;
+    transition: all 0.3s ease;
+}
+
+/* Features box top-level list item hover effects */
+.features-box ul > li:hover {
+    color: var(--primary-purple);
+    transform: translateX(5px);
+}
+
+/* Command box container */
+.command-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin: 8px 0;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+/* Installation command box specific styles */
+.install-command {
+    width: 100%;
+}
+
+.install-command code {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Command box code text */
+.command-box code {
+    font-family: monospace;
+    color: var(--light-purple);
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0 0 0 8px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Command description text */
+.command-description {
+    color: #bbb;
+    font-size: 0.9rem;
+    margin-left: 15px;
+    margin-top: 4px;
+}
+
+/* Command aliases text */
+.command-aliases {
+    color: var(--light-purple);
+    font-size: 0.85rem;
+    margin-left: 15px;
+    margin-top: 2px;
+    font-style: italic;
+}
+
+/* Command aliases code blocks */
+.command-aliases code {
+    color: var(--primary-purple);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* Command group container */
+.command-group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+/* Copy button styles */
+.copy-button {
+    background: rgba(156, 39, 176, 0.2);
+    border: 1px solid rgba(156, 39, 176, 0.3);
+    color: var(--light-purple);
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    flex-shrink: 0;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Copy button hover effects */
+.copy-button:hover {
+    background: rgba(156, 39, 176, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(156, 39, 176, 0.2);
+}
+
+/* Copy button active state */
+.copy-button:active {
+    transform: translateY(0);
+}
+
+/* Copy button icon */
+.copy-button i {
+    font-size: 1rem;
+}
+
+/* Feature popup container */
+.feature-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    background: rgba(30, 30, 30, 0.95);
+    border-radius: 12px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 99999;
+    border: 1px solid rgba(156, 39, 176, 0.2);
+    pointer-events: none;
+    filter: none !important;
+}
+
+/* Active state for feature popup */
+.feature-popup.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Feature popup heading */
+.feature-popup h3 {
+    color: var(--primary-purple);
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.1s;
+}
+
+/* Active state for feature popup heading */
+.feature-popup.active h3 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Feature popup emoji */
+.feature-popup h3 span {
+    display: inline-block;
+    transform: scale(0.5) rotate(-10deg);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+}
+
+/* Active state for feature popup emoji */
+.feature-popup.active h3 span {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+}
+
+/* Feature popup paragraph */
+.feature-popup p {
+    color: #ddd;
+    line-height: 1.6;
+    margin: 0;
+    white-space: pre-line;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition-delay: 0.3s;
+}
+
+/* Active state for feature popup paragraph */
+.feature-popup.active p {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Close popup button */
+.close-popup {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(156, 39, 176, 0.1);
+    border: 1px solid rgba(156, 39, 176, 0.2);
+    color: var(--light-purple);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-size: 1rem;
+    text-align: center;
+    transform: scale(0.8) rotate(-90deg);
+    opacity: 0;
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.3s ease, color 0.3s ease;
+    transition-delay: 0.4s;
+}
+
+/* Active state for close popup button */
+.feature-popup.active .close-popup {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+}
+
+/* Close popup button hover effects */
+.close-popup:hover {
+    background: rgba(156, 39, 176, 0.2);
+    color: #fff;
+    transform: scale(1.1) rotate(90deg);
+}
+
+/* Remove popup active state from feature section */
+.feature-section.popup-active::before {
+    display: none;
+}
+
+/* Command group box container */
+.command-group-box {
+    background: rgba(40, 40, 40, 0.85);
+    border: 1.5px solid rgba(156, 39, 176, 0.08);
+    border-radius: 12px;
+    padding: 18px 18px 8px 18px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+
+/* Section divider */
+.section-divider {
+    border: none;
+    border-top: 2px solid rgba(156, 39, 176, 0.18);
+    margin: 36px 0 32px 0;
+    width: 100%;
+}
