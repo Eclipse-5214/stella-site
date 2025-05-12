@@ -31,12 +31,7 @@ if (document.querySelector(".alt-install")) {
         const toggleButton = document.querySelector(".toggle-button");
         const closeButton = document.querySelector(".close-button");
 
-        if (
-            altInstall.classList.contains("active") &&
-            !altInstall.contains(event.target) &&
-            !toggleButton.contains(event.target) &&
-            !closeButton.contains(event.target)
-        ) {
+        if (altInstall.classList.contains("active") && !altInstall.contains(event.target) && !toggleButton.contains(event.target) && !closeButton.contains(event.target)) {
             altInstall.classList.remove("active");
         }
     });
@@ -50,23 +45,9 @@ function showFeaturePopup(title, description, event) {
     const popupEmoji = document.getElementById("popup-emoji");
 
     // Set emoji based on feature category
-    if (
-        title.includes("BLC") ||
-        title.includes("Route") ||
-        title.includes("Secret") ||
-        title.includes("Terminal") ||
-        title.includes("Crypt") ||
-        title.includes("Death")
-    ) {
+    if (title.includes("BLC") || title.includes("Route") || title.includes("Secret") || title.includes("Terminal") || title.includes("Crypt") || title.includes("Death")) {
         popupEmoji.textContent = "💀";
-    } else if (
-        title.includes("Map") ||
-        title.includes("Layout") ||
-        title.includes("Boss") ||
-        title.includes("Score") ||
-        title.includes("Room") ||
-        title.includes("Party")
-    ) {
+    } else if (title.includes("Map") || title.includes("Layout") || title.includes("Boss") || title.includes("Score") || title.includes("Room") || title.includes("Party")) {
         popupEmoji.textContent = "🗺️";
     } else {
         popupEmoji.textContent = "✨";
@@ -110,12 +91,8 @@ if (document.querySelector(".feature-popup")) {
         const popup = document.querySelector(".feature-popup");
         const closeButton = document.querySelector(".close-popup");
 
-        if (
-            popup.classList.contains("active") &&
-            !popup.contains(event.target) &&
-            !event.target.closest("li")
-        ) {
+        if (popup.classList.contains("active") && !popup.contains(event.target) && !event.target.closest("li")) {
             closeFeaturePopup();
         }
     });
-} 
+}

@@ -372,4 +372,87 @@ footer a:hover {
 .feature-section li a:hover {
     color: #fff;
     transform: translateX(5px);
-} 
+}
+
+/* Enhanced Mobile Responsiveness */
+@media (max-width: 768px) {
+    .glass-panel {
+        margin: 15px;
+        padding: 25px 15px;
+    }
+
+    .header-glass {
+        margin: 15px;
+        padding: 40px 15px;
+    }
+
+    .header-glass h1 {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        margin: 15px;
+        padding: 5px;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        flex: 1 1 calc(50% - 10px);
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .screenshots {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .screenshots img {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .download {
+        text-align: center;
+    }
+
+    .download a {
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .features-box {
+        margin: 15px;
+    }
+
+    .feature-section {
+        padding: 20px 15px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .header-glass h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .features li {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}

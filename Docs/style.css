@@ -780,7 +780,7 @@ footer a:hover {
 
 /* Feature popup container */
 .feature-popup {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -913,7 +913,7 @@ footer a:hover {
     border-radius: 12px;
     padding: 18px 18px 8px 18px;
     margin-bottom: 24px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Section divider */
@@ -922,4 +922,178 @@ footer a:hover {
     border-top: 2px solid rgba(156, 39, 176, 0.18);
     margin: 36px 0 32px 0;
     width: 100%;
+}
+
+/* Enhanced Mobile Responsiveness for Docs */
+@media (max-width: 768px) {
+    .glass-panel {
+        margin: 15px;
+        padding: 15px 15px 30px 15px;
+    }
+
+    .header-glass {
+        margin: 15px;
+        padding: 15px 15px 30px 15px;
+    }
+
+    .header-glass h1 {
+        font-size: 2.2rem;
+    }
+
+    .doc-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .doc-section h3 {
+        font-size: 1.4rem;
+    }
+
+    .doc-section p {
+        font-size: 1rem;
+    }
+
+    nav {
+        margin: 15px;
+        padding: 5px;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        flex: 1 1 calc(50% - 10px);
+        justify-content: center;
+    }
+
+    .command-box {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .install-command {
+        overflow-x: auto;
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+
+    .command-box code {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .copy-button {
+        padding: 8px;
+        right: 10px;
+        top: 10px;
+    }
+
+    .feature-section {
+        padding: 15px;
+    }
+
+    .feature-popup,
+    .alt-install {
+        width: 95%;
+        max-height: 90vh;
+        overflow-y: auto;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .feature-popup.active,
+    .alt-install.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    .close-popup {
+        right: 10px;
+        top: 10px;
+    }
+
+    .features-box {
+        margin: 10px;
+    }
+
+    .feature-note {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .command-group-box {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .toggle-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .alt-install {
+        width: 100%;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .header-glass h1 {
+        font-size: 1.8rem;
+    }
+
+    .doc-section h2 {
+        font-size: 1.6rem;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    }
+
+    .command-box code {
+        font-size: 0.85rem;
+    }
+
+    .feature-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .feature-popup {
+        width: 95%;
+        left: 2.5%;
+        padding: 15px;
+    }
+
+    .feature-section ul,
+    .features-box ul {
+        padding-left: 15px;
+    }
+
+    .feature-section li,
+    .features-box li {
+        font-size: 0.95rem;
+    }
+
+    .command-description {
+        font-size: 0.9rem;
+    }
+
+    .command-aliases {
+        font-size: 0.85rem;
+    }
+
+    .section-divider {
+        margin: 20px 0;
+    }
+}
+
+/* Ensure code blocks are responsive */
+@media (max-width: 768px) {
+    pre {
+        max-width: 100%;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    .command-box pre {
+        margin: 5px 0;
+    }
 }
