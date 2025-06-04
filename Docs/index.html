@@ -5,12 +5,14 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Stella Documentation</title>
-        
+
         <!-- External CSS imports -->
         <!-- Font Awesome for icons -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
         <!-- Custom stylesheet -->
         <link rel="stylesheet" href="style.css" />
+        <!-- Favicon for the website -->
+        <link rel="icon" href="/assets/logo.png" type="image/png" />
     </head>
     <body>
         <!-- Header section with title and description -->
@@ -25,7 +27,7 @@
             <a href="#install"><i class="fas fa-download"></i>Installation</a>
             <a href="#commands"><i class="fas fa-terminal"></i>Commands</a>
             <a href="#features"><i class="fas fa-star"></i>Features</a>
-            <a href="https://discord.gg/soontm" target="_blank"><i class="fab fa-discord"></i>Discord</a>
+            <a href="https://discord.gg/EzEfQyGdAg" target="_blank"><i class="fab fa-discord"></i>Discord</a>
             <a href="https://github.com/Eclipse-5214/stella" target="_blank"><i class="fab fa-github"></i>GitHub</a>
         </nav>
 
@@ -35,7 +37,7 @@
             <h2 style="background: linear-gradient(45deg, var(--light-purple), var(--primary-purple)); -webkit-background-clip: text; background-clip: text; color: transparent; display: inline-block">
                 <i class="fas fa-rocket" style="color: var(--light-purple); margin-right: 10px"></i>Installation
             </h2>
-            
+
             <!-- Main installation command box -->
             <div class="command-box install-command">
                 <code>/ct import Stella</code>
@@ -126,7 +128,7 @@
             <!-- Routes commands section -->
             <div class="features-box">
                 <h3>Routes Commands</h3>
-                <h4 style="color: var(--primary-purple); margin-bottom: 8px;">Normal Route Commands</h4>
+                <h4 style="color: var(--primary-purple); margin-bottom: 8px">Normal Route Commands</h4>
                 <div class="command-group-box">
                     <div class="command-group">
                         <div class="command-box">
@@ -198,7 +200,7 @@
             <hr class="section-divider" />
             <!-- Debug route commands section -->
             <div class="features-box">
-                <h4 style="color: var(--primary-purple); margin: 24px 0 8px 0;">Debug Route Commands</h4>
+                <h4 style="color: var(--primary-purple); margin: 24px 0 8px 0">Debug Route Commands</h4>
                 <div class="command-group-box">
                     <div class="command-group">
                         <div class="command-box">
@@ -275,14 +277,10 @@
                         <li id="dungeon-routes">
                             Dungeon Routes
                             <ul>
-                                <li
-                                    onclick="showFeaturePopup('BLC Route System', 'Similar to BLC route system\n\n• Familiar interface for BLC users\n• Easy transition from BLC\n• Maintains route quality standards', event)"
-                                >
+                                <li onclick="showFeaturePopup('BLC Route System', 'Similar to BLC route system\n\n• Familiar interface for BLC users\n• Easy transition from BLC\n• Maintains route quality standards', event)">
                                     Similar to BLC route system
                                 </li>
-                                <li
-                                    onclick="showFeaturePopup('Pre-made Routes', '70+ pre-made routes included\n\n• Rotes recoded by a cata 40\n• Optimized for speed and efficiency\n• Exit Routes\n• Regular route updates', event)"
-                                >
+                                <li onclick="showFeaturePopup('Pre-made Routes', '70+ pre-made routes included\n\n• Rotes recoded by a cata 40\n• Optimized for speed and efficiency\n• Exit Routes\n• Regular route updates', event)">
                                     70+ pre-made routes included
                                 </li>
                                 <li
@@ -290,42 +288,30 @@
                                 >
                                     Record and save your own custom routes
                                 </li>
-                                <li
-                                    onclick="showFeaturePopup('Uber Customizable', 'Route System Customization\n\n• Custom route colors and styles\n• Adjustable waypoint text\n• Custom route lines', event)"
-                                >
-                                    Uber customizable
-                                </li>
+                                <li onclick="showFeaturePopup('Uber Customizable', 'Route System Customization\n\n• Custom route colors and styles\n• Adjustable waypoint text\n• Custom route lines', event)">Uber customizable</li>
                             </ul>
                         </li>
                         <li id="secret-waypoints">
                             Secret Waypoints
                             <ul>
-                                <li
-                                    onclick="showFeaturePopup('Uber Customizable', 'Secret Waypoint Customization\n\n• Custom waypoint colors', event)"
-                                >
-                                    Also uber customizable
-                                </li>
+                                <li onclick="showFeaturePopup('Uber Customizable', 'Secret Waypoint Customization\n\n• Custom waypoint colors', event)">Also uber customizable</li>
                             </ul>
                         </li>
                         <li id="terminal-features">
                             Terminal Features
                             <ul>
-                                <li onclick="showFeaturePopup('Terminal Numbers', 'Terminal Numbers display\n\n• Clear number visualization\n• Ability to choose your term', event)">
-                                    Terminal Numbers display
-                                </li>
-                                <li onclick="showFeaturePopup('Classes on term', 'Terminal Classes\n\n• Shows class instead of number\n• Ability to choose your class\n• M7 roles for learning', event)">
-                                    Terminal Classes
-                                </li>
-                                <li onclick="showFeaturePopup('Terminal Tracking', 'Terminal Tracker\n\n• Real-time terminal status (soon)\n• Completion tracking\n• Party-wide terminal info', event)">
-                                    Terminal Tracker
-                                </li>
+                                <li onclick="showFeaturePopup('Terminal Numbers', 'Terminal Numbers display\n\n• Clear number visualization\n• Ability to choose your term', event)">Terminal Numbers display</li>
+                                <li onclick="showFeaturePopup('Classes on term', 'Terminal Classes\n\n• Shows class instead of number\n• Ability to choose your class\n• M7 roles for learning', event)">Terminal Classes</li>
+                                <li onclick="showFeaturePopup('Terminal Tracking', 'Terminal Tracker\n\n• Real-time terminal status (soon)\n• Completion tracking\n• Party-wide terminal info', event)">Terminal Tracker</li>
                             </ul>
                         </li>
                         <li id="misc-features">
                             Misc
                             <ul>
                                 <li onclick="showFeaturePopup('Room Names', 'Room name GUI\n\n• Clear room identification\n• Can be chroma', event)">Room name GUI</li>
-                                <li onclick="showFeaturePopup('Dungeon Trash', 'Dungeon Trash Highlighting\n\n• Highlights trash items in your inventory\n• Easy identification for selling\n• Custom highlight colors', event)">Dungeon Trash Highlighting</li>
+                                <li onclick="showFeaturePopup('Dungeon Trash', 'Dungeon Trash Highlighting\n\n• Highlights trash items in your inventory\n• Easy identification for selling\n• Custom highlight colors', event)">
+                                    Dungeon Trash Highlighting
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -339,9 +325,7 @@
                         <li id="interactive-map">
                             Interactive Dungeon Map
                             <ul>
-                                <li onclick="showFeaturePopup('Dungeon Layout', 'Real-time dungeon layout display\n\n• Live room mapping\n• Wither door location\n• Smooth player positions', event)">
-                                    Real-time dungeon layout display
-                                </li>
+                                <li onclick="showFeaturePopup('Dungeon Layout', 'Real-time dungeon layout display\n\n• Live room mapping\n• Wither door location\n• Smooth player positions', event)">Real-time dungeon layout display</li>
                                 <li onclick="showFeaturePopup('Boss Room', 'Detailed boss room mapping\n\n• All floors have maps\n• Maps change based on phase\n• Party positioning', event)">Detailed boss room mapping</li>
                             </ul>
                         </li>
@@ -357,12 +341,8 @@
                         <li id="run-stats">
                             Run Statistics
                             <ul>
-                                <li onclick="showFeaturePopup('Room Clears', 'Per-player room clear tracking\n\n• Individual clear times\n• Room stacking detection\n• Room cleared range estimate', event)">
-                                    Per-player room clear tracking
-                                </li>
-                                <li onclick="showFeaturePopup('Secret Counts', 'Secret count per player\n\n• Individual secret finds', event)">
-                                    Secret count per player
-                                </li>
+                                <li onclick="showFeaturePopup('Room Clears', 'Per-player room clear tracking\n\n• Individual clear times\n• Room stacking detection\n• Room cleared range estimate', event)">Per-player room clear tracking</li>
+                                <li onclick="showFeaturePopup('Secret Counts', 'Secret count per player\n\n• Individual secret finds', event)">Secret count per player</li>
                                 <li onclick="showFeaturePopup('Run Breakdown', 'Detailed run breakdown\n\n• Complete run statistics\n• Performance metrics\n• Time analysis\n• Improvement suggestions', event)">Detailed run breakdown</li>
                             </ul>
                         </li>
@@ -419,7 +399,7 @@
         <footer>
             <p>&copy; 2024 Stella Dev Team. Not affiliated with Mojang.</p>
             <p>
-                <a href="https://discord.gg/soontm" target="_blank"><i class="fab fa-discord fa-lg"></i></a>
+                <a href="https://discord.gg/EzEfQyGdAg" target="_blank"><i class="fab fa-discord fa-lg"></i></a>
                 <a href="https://github.com/Eclipse-5214/stella" target="_blank"><i class="fab fa-github fa-lg"></i></a>
             </p>
         </footer>
